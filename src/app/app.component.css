@@ -1,0 +1,43 @@
+.modal-card {
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  background-color: white;
+  box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
+}
+.modal-card-head {
+  margin: 0 0 1.2rem;
+}
+.modal-card-body {
+  padding: 0.5rem 0;
+}
+.modal-card-foot {
+  display: flex;
+  margin-top: 1.2rem;
+}
+.modal-card-foot button {
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  border: 0;
+  border-radius: 0.2rem;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.modal-card-foot button:last-child {
+  margin-inline-start: 0.5rem;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

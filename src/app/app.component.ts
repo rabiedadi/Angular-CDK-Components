@@ -10,7 +10,7 @@ export class AppComponent {
   index = 'Algeria';
   constructor(private overlayService: OverlayService) {}
   open(tpl: TemplateRef<any>) {
-    const ref = this.overlayService.open(tpl, {origin: 'global'}, null);
+    const ref = this.overlayService.open(tpl, {origin: 'global', width: '300px'}, null);
 
     ref.afterClosed$.subscribe(res => {
       console.log(res);

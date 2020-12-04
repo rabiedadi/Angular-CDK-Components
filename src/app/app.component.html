@@ -1,5 +1,8 @@
 <ng-template #tpl let-close="close">
   <div class="modal-card">
+    <section class="modal-card-head">
+      Header
+    </section>
     <section class="modal-card-body">
       A yes no dialog, using template
     </section>
@@ -14,6 +17,7 @@
 <button (click)="open(tpl)" class="button is-small is-primary">
   Show
 </button>
+<hr />
 
 <app-select [(ngModel)]="index" blu>
   <app-option [value]="'Afghanistan'">Afghanistan<b> test</b></app-option>
@@ -99,17 +103,7 @@
   <app-option [value]="'Jamaica'">Jamaica</app-option>
 </app-select>
 {{ index }}
-<app-select [(ngModel)]="index2">
-  <app-option [value]="'Belarus'">Belarus</app-option>
-  <app-option [value]="'Belgium'">Belgium</app-option>
-  <app-option [value]="'Belize'">Belize</app-option>
-  <app-option [value]="'Belize'">Belize</app-option>
-  <app-option [value]="'Belize'">Belize</app-option>
-</app-select>
-<br>
-<br>
-<br>
-<br>
+<hr />
 <app-checkbox [id]="'ch1'" [value]="'ch1'" [name]="'ch1'">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</app-checkbox>
 <br>
 <app-checkbox [id]="'ch2'" [value]="'ch2'" [name]="'ch2'">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</app-checkbox>
@@ -117,9 +111,8 @@
 <app-checkbox [id]="'ch3'" [value]="'ch3'" [name]="'ch3'">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</app-checkbox>
 <br>
 <app-checkbox [id]="'ch4'" [value]="'ch4'" [name]="'ch4'">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</app-checkbox>
-<br>
-<br>
-<br>
+<hr />
+
 <form #myForm="ngForm" novalidate>
   <label for="male" class="radio-container">
     <input id="male" type="radio" class="custom-control-input" value="male" name="gender" [(ngModel)]="gender">
@@ -129,5 +122,5 @@
     <input id="female" type="radio" class="custom-control-input" value="female" name="gender" [(ngModel)]="gender">
     <span>female</span>
   </label>
-</form><!-- Form ends -->
+</form>
 {{ gender }}
