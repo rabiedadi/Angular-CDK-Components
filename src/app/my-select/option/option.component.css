@@ -1,0 +1,18 @@
+.drop-down-option {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  color: #5b636d;
+  font-size: 13px;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.drop-down-option:hover,
+.drop-down-option-hovered {
+  background-color: #F2F2F2;
+}
+.drop-down-option-selected {
+  background-color: #D9D9D9;
+}

@@ -1,0 +1,30 @@
+.select-value-container {
+  height: 2rem;
+  width: 8rem;
+  background-color: white;
+  border: 0;
+  border-radius: 0;
+  color: #444444;
+  padding: 0 0.5rem;
+  font-size: 14px;
+  outline: none;
+  box-shadow: 0 0 2px rgba(0,0,0,0.24);
+  cursor: pointer;
+}
+
+.drop-down {
+  overflow-y: scroll;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 175px;
+  margin-top: 2px;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

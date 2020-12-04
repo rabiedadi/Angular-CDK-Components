@@ -1,0 +1,133 @@
+<ng-template #tpl let-close="close">
+  <div class="modal-card">
+    <section class="modal-card-body">
+      A yes no dialog, using template
+    </section>
+    <footer class="modal-card-foot">
+      <div class="buttons">
+        <button (click)="close('yes')" type="button" class="button is-success">Yes</button>
+        <button (click)="close('no')" type="button" class="button is-danger">No</button>
+      </div>
+    </footer>
+  </div>
+</ng-template>
+<button (click)="open(tpl)" class="button is-small is-primary">
+  Show
+</button>
+
+<app-select [(ngModel)]="index" blu>
+  <app-option [value]="'Afghanistan'">Afghanistan<b> test</b></app-option>
+  <app-option [value]="'Albania'">Albania</app-option>
+  <app-option [value]="'Algeria'">Algeria</app-option>
+  <app-option [value]="'Andorra'">Andorra</app-option>
+  <app-option [value]="'Angola'">Angola</app-option>
+  <app-option [value]="'Antigua & Deps'">Antigua & Deps</app-option>
+  <app-option [value]="'Austria'">Austria</app-option>
+  <app-option [value]="'Azerbaijan'">Azerbaijan</app-option>
+  <app-option [value]="'Bahamas'">Bahamas</app-option>
+  <app-option [value]="'Bahrain'">Bahrain</app-option>
+  <app-option [value]="'Bangladesh'">Bangladesh</app-option>
+  <app-option [value]="'Barbados'">Barbados</app-option>
+  <app-option [value]="'Belarus'">Belarus</app-option>
+  <app-option [value]="'Belgium'">Belgium</app-option>
+  <app-option [value]="'Belize'">Belize</app-option>
+  <app-option [value]="'Benin'">Benin</app-option>
+  <app-option [value]="'Bhutan'">Bhutan</app-option>
+  <app-option [value]="'Bolivia'">Bolivia</app-option>
+  <app-option [value]="'Bosnia Herzegovina'">Bosnia Herzegovina</app-option>
+  <app-option [value]="'Botswana'">Botswana</app-option>
+  <app-option [value]="'Brazil'">Brazil</app-option>
+  <app-option [value]="'Brunei'">Brunei</app-option>
+  <app-option [value]="'Bulgaria'">Bulgaria</app-option>
+  <app-option [value]="'Burkina'">Burkina</app-option>
+  <app-option [value]="'Burundi'">Burundi</app-option>
+  <app-option [value]="'Cambodia'">Cambodia</app-option>
+  <app-option [value]="'Cameroon'">Cameroon</app-option>
+  <app-option [value]="'Canada'">Canada</app-option>
+  <app-option [value]="'Cape Verde'">Cape Verde</app-option>
+  <app-option [value]="'Central African Rep'">Central African Rep</app-option>
+  <app-option [value]="'Chad'">Chad</app-option>
+  <app-option [value]="'Chile'">Chile</app-option>
+  <app-option [value]="'China'">China</app-option>
+  <app-option [value]="'Colombia'">Colombia</app-option>
+  <app-option [value]="'Comoros'">Comoros</app-option>
+  <app-option [value]="'Congo'">Congo</app-option>
+  <app-option [value]="'Congo {Democratic Rep}'">Congo 'Democratic Rep'</app-option>
+  <app-option [value]="'Costa Rica'">Costa Rica</app-option>
+  <app-option [value]="'Croatia'">Croatia</app-option>
+  <app-option [value]="'Cuba'">Cuba</app-option>
+  <app-option [value]="'Cyprus'">Cyprus</app-option>
+  <app-option [value]="'Czech Republic'">Czech Republic</app-option>
+  <app-option [value]="'Denmark'">Denmark</app-option>
+  <app-option [value]="'Djibouti'">Djibouti</app-option>
+  <app-option [value]="'Dominica'">Dominica</app-option>
+  <app-option [value]="'Dominican Republic'">Dominican Republic</app-option>
+  <app-option [value]="'East Timor'">East Timor</app-option>
+  <app-option [value]="'Ecuador'">Ecuador</app-option>
+  <app-option [value]="'Egypt'">Egypt</app-option>
+  <app-option [value]="'El Salvador'">El Salvador</app-option>
+  <app-option [value]="'Equatorial Guinea'">Equatorial Guinea</app-option>
+  <app-option [value]="'Eritrea'">Eritrea</app-option>
+  <app-option [value]="'Estonia'">Estonia</app-option>
+  <app-option [value]="'Ethiopia'">Ethiopia</app-option>
+  <app-option [value]="'Fiji'">Fiji</app-option>
+  <app-option [value]="'Finland'">Finland</app-option>
+  <app-option [value]="'France'">France</app-option>
+  <app-option [value]="'Gabon'">Gabon</app-option>
+  <app-option [value]="'Gambia'">Gambia</app-option>
+  <app-option [value]="'Georgia'">Georgia</app-option>
+  <app-option [value]="'Germany'">Germany</app-option>
+  <app-option [value]="'Ghana'">Ghana</app-option>
+  <app-option [value]="'Greece'">Greece</app-option>
+  <app-option [value]="'Grenada'">Grenada</app-option>
+  <app-option [value]="'Guatemala'">Guatemala</app-option>
+  <app-option [value]="'Guinea'">Guinea</app-option>
+  <app-option [value]="'Guinea-Bissau'">Guinea-Bissau</app-option>
+  <app-option [value]="'Guyana'">Guyana</app-option>
+  <app-option [value]="'Haiti'">Haiti</app-option>
+  <app-option [value]="'Honduras'">Honduras</app-option>
+  <app-option [value]="'Hungary'">Hungary</app-option>
+  <app-option [value]="'Iceland'">Iceland</app-option>
+  <app-option [value]="'India'">India</app-option>
+  <app-option [value]="'Indonesia'">Indonesia</app-option>
+  <app-option [value]="'Iran'">Iran</app-option>
+  <app-option [value]="'Iraq'">Iraq</app-option>
+  <app-option [value]="'Ireland'">Ireland</app-option>
+  <app-option [value]="'Israel'">Israel</app-option>
+  <app-option [value]="'Italy'">Italy</app-option>
+  <app-option [value]="'Ivory Coast'">Ivory Coast</app-option>
+  <app-option [value]="'Jamaica'">Jamaica</app-option>
+</app-select>
+{{ index }}
+<app-select [(ngModel)]="index2">
+  <app-option [value]="'Belarus'">Belarus</app-option>
+  <app-option [value]="'Belgium'">Belgium</app-option>
+  <app-option [value]="'Belize'">Belize</app-option>
+  <app-option [value]="'Belize'">Belize</app-option>
+  <app-option [value]="'Belize'">Belize</app-option>
+</app-select>
+<br>
+<br>
+<br>
+<br>
+<app-checkbox [id]="'ch1'" [value]="'ch1'" [name]="'ch1'">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</app-checkbox>
+<br>
+<app-checkbox [id]="'ch2'" [value]="'ch2'" [name]="'ch2'">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</app-checkbox>
+<br>
+<app-checkbox [id]="'ch3'" [value]="'ch3'" [name]="'ch3'">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</app-checkbox>
+<br>
+<app-checkbox [id]="'ch4'" [value]="'ch4'" [name]="'ch4'">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</app-checkbox>
+<br>
+<br>
+<br>
+<form #myForm="ngForm" novalidate>
+  <label for="male" class="radio-container">
+    <input id="male" type="radio" class="custom-control-input" value="male" name="gender" [(ngModel)]="gender">
+    <span>male</span>
+  </label>
+  <label for="female" class="radio-container">
+    <input id="female" type="radio" class="custom-control-input" value="female" name="gender" [(ngModel)]="gender">
+    <span>female</span>
+  </label>
+</form><!-- Form ends -->
+{{ gender }}

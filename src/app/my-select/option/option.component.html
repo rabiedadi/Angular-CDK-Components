@@ -1,0 +1,13 @@
+<div class="drop-down-option" #content
+     [class.drop-down-option-hovered]="hovered"
+     [class.drop-down-option-selected]="selected"
+     (click)="select()">
+    <ng-content></ng-content>
+</div>
+
+<!--    <div *ngFor="let option of options, let i = index" class="drop-down-option"-->
+<!--         [class.drop-down-option-hovered]="i === hoveredOption"-->
+<!--         [class.drop-down-option-selected]="i === index"-->
+<!--         (click)="optionSelected(i)">-->
+<!--      {{ option }}-->
+<!--    </div>-->

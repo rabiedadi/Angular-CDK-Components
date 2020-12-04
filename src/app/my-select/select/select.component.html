@@ -1,0 +1,16 @@
+<input class="select-value-container" type="text" readonly placeholder="Select"
+       (click)="openPanel();"
+       (blur)="onInputTouche(); blurEvent.emit($event)"
+       (focus)="focusEvent.emit($event)"
+       (input)="onInputChange(origin.value)"
+       (keydown)="keyDown($event.key)"
+       [disabled]="disabled"
+       [value]="selectedOptionValue || null" #origin >
+
+
+<ng-template #panelTemplate>
+  <div class="drop-down" [class.hide-scroll] = "optionsRefsArray.length <= 5">
+    <ng-content></ng-content>
+  </div>
+</ng-template>
+
